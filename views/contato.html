@@ -1,0 +1,26 @@
+
+<form method="POST" id="contato">
+<!--<form action="cadastro.php" method="post" enctype="multipart/form-data">-->
+    <h1>Fale Conosco</h1>
+    <fieldset>
+        Nome: <input type="text" placeholder="nome" minlength="7" maxlength="60" id="nome" name="nome"/> <br><br>
+        <span id="erroNome"></span>
+        Email: <input type="text" placeholder="email" maxlength="20" id="email" name="email"/><br><br>
+        <span id="erroEmail"></span>
+        Assunto: 
+            <select name="assunto" id="assunto">
+                <option selected value="">Selecione</option>
+                <option value="ouvidoria">Ouvidoria</option>
+                <option value="sugestão">Sugestões</option>
+                <option value="elogio">Elogios</option>
+            </select> <br><br>
+        <span id="erroAssunto"></span>
+        Mensagem: <br>
+        <textarea cols="50" rows="10" name="msg" id="msg"></textarea> <br><br>
+        <span id="erroMsg"></span>
+        <input type="submit" value="Cadastrar"/>
+        <input type="reset" value="Limpar"/>
+     </fieldset>
+</form>
+<script src="/js/contato.js"> </script>
+
